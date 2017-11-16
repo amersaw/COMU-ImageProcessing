@@ -47,7 +47,7 @@ plt.show()
 ```
 
 
-![png](Images/img_1_1.png?raw=true)
+![png](Images/img_1_2.png?raw=true)
 
 
 
@@ -76,4 +76,4 @@ plt.show()
 ```
 
 
-![png](Images/img_1_2.png?raw=true)
+![png](Images/img_1_1.png?raw=true)
