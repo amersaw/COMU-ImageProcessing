@@ -5,3 +5,12 @@ Konular :
  - [Daire Karalama ve Channel Sifirlama](1_Daire_Karalama_ve_Channel_Sifirlama.md)
  - [Convert to Gray BlackWhite](2_Convert_to_Gray_BlackWhite.md)
  - [Sprace Matrix](7_Sprace_Matrix.md)
+
+
+
+<!-- To Do :
+2 resim arasindaki fark
+ Find Center
+  Reshape
+resize image using mask 4x4
+ -->
