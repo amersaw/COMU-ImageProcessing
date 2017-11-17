@@ -1,4 +1,15 @@
 
+## Uzaklık bulma (findDistance) fonksiyonu
+Ellimizde 2 nokta var ise bu iki nokta arasındaki uzaklığı bulmak için aşağıdaki kuralı kullanabiliriz :
+
+![Png](http://cdn.virtualnerd.com/tutorials/Alg1_13_01_0001/assets/Alg1_13_01_0001_D_01_09.png)
+
+Hem **p** hem de **center** parametreyi list tipinden olacak, ve her birisi içinde sadece ve sadece 2 eleman vardır.
+ 1. elemanı, noktanın x koordinatörü
+ 2. elemanı, noktanın y koordinatörü
+
+kabul ederek, uzaklığı buluyoruz
+
 
 ```python
 from scipy import ndimage
@@ -6,8 +17,6 @@ from scipy import misc
 import matplotlib.pyplot as plt
 import math
 ```
-
-![Png](http://cdn.virtualnerd.com/tutorials/Alg1_13_01_0001/assets/Alg1_13_01_0001_D_01_09.png)
 
 
 ```python
@@ -25,16 +34,26 @@ print('f tipi          : ', type(f))
 im_size = f.shape
 print('Image Dimension : ', f.ndim)
 print('Image Size      : ', im_size)
-
-center = [im_size[0]/2, im_size[1]/2]
-print('Center Point    : ', center)
 ```
 
     f tipi          :  <class 'numpy.ndarray'>
     Image Dimension :  3
     Image Size      :  (768, 1024, 3)
+
+
+Center noktayı bulabilmek için :
+
+
+```python
+center = [im_size[0]/2, im_size[1]/2]
+print('Center Point    : ', center)
+```
+
     Center Point    :  [384.0, 512.0]
 
+
+### Daire Karalama
+Daire Karalama mantığı, fotoğraftaki ortak noktayı bulduktan sonra ve findDistance fonksiyonu kullanarak bu noktadan x uzakklıkta kalaın her nukta dışında siyah yapıyoruz.
 
 
 ```python
