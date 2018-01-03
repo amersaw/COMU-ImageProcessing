@@ -28,7 +28,7 @@ imgplot = plt.imshow(img)
 ```
 
 
-![png](Images/img_4_1.png)
+![png](Images/img_4_1.png?raw=true)
 
 
 Fotoğrafın özelliklerine bakalım :
